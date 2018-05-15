@@ -10,6 +10,12 @@ a{
 body{
 	    display: block;
 }
+.mui-navigate-right{
+	font-size:14px;
+}
+.tupiandingwei{
+	
+}
 .m-top{
 	background:url(../img/hd_bg.png) no-repeat;
 	background-size:100% auto;
