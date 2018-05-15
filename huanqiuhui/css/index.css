@@ -198,3 +198,6 @@ header {
     background: #345ff1;
     box-shadow: 1px 1px 10px #a4c6e5;
 }
+.mh-right>a, .mh-center>p, .mh-lefe>a{
+	color:#FFFFFF;
+}
