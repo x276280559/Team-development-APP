@@ -269,27 +269,35 @@ body{
 }
 .nav_l.phone{
 	background:url(../img/phone.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.code{
 	background:url(../img/code.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.shichang{
 	background:url(../img/shichang.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.wife{
 	background:url(../img/wife.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.money{
 	background:url(../img/money.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.order{
 	background:url(../img/order.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.info{
 	background:url(../img/info.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l.address{
 	background:url(../img/address.png) no-repeat 0 10px;
+	background-size: 24px;
 }
 .nav_l p,
 .nav-details p{
