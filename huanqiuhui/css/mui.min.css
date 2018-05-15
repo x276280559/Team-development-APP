@@ -1873,7 +1873,7 @@ input[type=submit]:enabled:active {
 }
 
 .mui-table-view-cell {
-	/*position: relative;*/
+	position: relative;
 	overflow: hidden;
 	padding: 11px 15px;
 	-webkit-touch-callout: none
@@ -1902,7 +1902,7 @@ input[type=submit]:enabled:active {
 }
 
 .mui-table-view-cell.mui-active {
-	background-color: #eee
+	background-color:white;
 }
 
 .mui-table-view-cell:last-child:after,
@@ -1918,7 +1918,8 @@ input[type=submit]:enabled:active {
 	padding: inherit;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	color: inherit
+	color: inherit;
+	padding-left:7vh;
 }
 
 .mui-table-view-cell>a:not(.mui-btn).mui-active {
@@ -2189,7 +2190,7 @@ input[type=submit]:enabled:active {
 
 .mui-table-view-cell.mui-collapse>.mui-navigate-right:after,
 .mui-table-view-cell.mui-collapse>.mui-push-right:after {
-	content: '\e581'
+	content: '\e583'
 }
 
 .mui-table-view-cell.mui-collapse.mui-active {
@@ -2203,7 +2204,7 @@ input[type=submit]:enabled:active {
 
 .mui-table-view-cell.mui-collapse.mui-active>.mui-navigate-right:after,
 .mui-table-view-cell.mui-collapse.mui-active>.mui-push-right:after {
-	content: '\e580'
+	content: '\e581'
 }
 
 .mui-table-view-cell.mui-collapse.mui-active .mui-table-view-cell>a:not(.mui-btn).mui-active {
@@ -2215,8 +2216,8 @@ input[type=submit]:enabled:active {
 	position: relative;
 	display: none;
 	overflow: hidden;
-	margin: 11px -15px -11px;
-	padding: 8px 15px;
+	/*margin: 11px -15px -11px;
+	padding: 8px 15px;*/
 	-webkit-transition: height .35s ease;
 	-o-transition: height .35s ease;
 	transition: height .35s ease;
@@ -3971,7 +3972,8 @@ body>.mui-progressbar {
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	text-decoration: none;
-	color: #bbb;
+	color:gray;
+	font-weight: bold;
 	-webkit-font-smoothing: antialiased
 }
 
