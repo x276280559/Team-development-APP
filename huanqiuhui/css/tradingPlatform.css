@@ -9,6 +9,9 @@ body{
 	background: #FFFFFF;
 	box-shadow: none;
 }
+.mui-scroll-wrapper{
+	background: #F2F2F2;
+}
 .mui-control-content .mui-loading {
 	margin-top: 50px;
 }

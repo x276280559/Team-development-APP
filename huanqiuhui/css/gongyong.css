@@ -9,3 +9,9 @@ body{
 	height: 100vh;
 	padding-top: 44px;
 }
+.mui-bar-nav>a{
+	color: #CCCCCC;
+}
+.mui-title{
+	color: #666!important;
+}

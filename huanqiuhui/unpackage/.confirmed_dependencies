@@ -23,12 +23,14 @@
 			"img/hd_bg.png",
 			"img/money.png",
 			"tradingPlatform.html",
-			"css/personalCenter.css"
+			"css/personalCenter.css",
+			"personalSetting.html"
 		],
 		"refer": [
 			"trading platform.html",
 			"Financial details.html",
-			"tradingPlatform.html"
+			"tradingPlatform.html",
+			"personalSetting.html"
 		]
 	},
 	"trading platform.html": {
@@ -143,6 +145,42 @@
 		],
 		"refer": [
 			"index.html"
+		]
+	},
+	"personalSetting.html": {
+		"resources": [
+			"css/gongyong.css",
+			"css/personalSetting.css",
+			"modifiedData.html",
+			"changePassword.html",
+			"index.html"
+		],
+		"refer": [
+			"modifiedData.html",
+			"changePassword.html",
+			"index.html"
+		]
+	},
+	"modifiedData.html": {
+		"resources": [
+			"css/modifiedData.css",
+			"personalSetting.html"
+		],
+		"refer": [
+			"personalSetting.html"
+		]
+	},
+	"changePassword.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"css/changePassword.css",
+			"js/mui.poppicker.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"personalSetting.html"
+		],
+		"refer": [
+			"personalSetting.html"
 		]
 	}
 }
