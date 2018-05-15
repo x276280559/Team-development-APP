@@ -33,6 +33,19 @@
 			});
 		})(mui);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	if(window.plus) {
 		plusReady();
 	} else {
@@ -66,7 +79,7 @@
 
 	var T = document.getElementById("nineteen")
 	var U = document.getElementById("twenty")
-
+	
 	for(var i = 0; i < A.length; i++) {
 		var B = A[i]
 		B.index = i;
@@ -110,8 +123,11 @@
 				U.style.display = "block"
 				var div = document.getElementById('f');
 				div.className = 'address-height';
-
+			}else if(this.index==7){
+				T.style.display = "none"
+				U.style.display = "none"
 			}
-
 		})
 	}
+	
+			
