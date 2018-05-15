@@ -30,7 +30,8 @@
 			"trading platform.html",
 			"Financial details.html",
 			"tradingPlatform.html",
-			"personalSetting.html"
+			"personalSetting.html",
+			"PrePaid-phone.html"
 		]
 	},
 	"trading platform.html": {
@@ -181,6 +182,11 @@
 		],
 		"refer": [
 			"personalSetting.html"
+		]
+	},
+	"PrePaid-phone.html": {
+		"refer": [
+			"index.html"
 		]
 	}
 }

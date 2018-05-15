@@ -219,7 +219,9 @@
 					"css/personalCenter.css",
 					"personalSetting.html"
 				],
-				"refer": [],
+				"refer": [
+					"PrePaid-phone.html"
+				],
 				"priority": 0
 			},
 			"trading platform.html": {
@@ -362,6 +364,13 @@
 					"personalSetting.html"
 				],
 				"refer": [],
+				"priority": 0
+			},
+			"PrePaid-phone.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
 				"priority": 0
 			}
 		},
