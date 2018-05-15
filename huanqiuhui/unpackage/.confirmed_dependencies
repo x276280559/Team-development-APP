@@ -1,0 +1,148 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/echarts.min.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"trading platform.html",
+			"Financial details.html",
+			"js/center.js",
+			"css/personal center.css",
+			"img/xiazai.png",
+			"img/xinfeng.png",
+			"img/user-photo.4d1e36f.png",
+			"img/info.png",
+			"img/shichang.png",
+			"img/phone.png",
+			"img/address.png",
+			"img/wife.png",
+			"img/order.png",
+			"img/code.png",
+			"img/hd_bg.png",
+			"img/money.png",
+			"tradingPlatform.html",
+			"css/personalCenter.css"
+		],
+		"refer": [
+			"trading platform.html",
+			"Financial details.html",
+			"tradingPlatform.html"
+		]
+	},
+	"trading platform.html": {
+		"resources": [
+			"css/trading platform.css",
+			"index.html",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Currency conversion.html": {
+		"resources": [
+			"css/gongyong.css",
+			"js/mui.picker.js",
+			"js/mui.min.js",
+			"js/mui.poppicker.js",
+			"fonts/mui.ttf",
+			"css/Currency conversion.css",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"index.html"
+		],
+		"refer": []
+	},
+	"Financial details.html": {
+		"resources": [
+			"css/gongyong.css",
+			"js/mui.picker.js",
+			"js/mui.min.js",
+			"js/mui.poppicker.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"css/cw.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Remittance top-up.html": {
+		"resources": [
+			"css/gongyong.css",
+			"js/mui.picker.js",
+			"img/793951bcd1c801f01a801904ff9c1de4.png",
+			"css/Remittance top-up.css",
+			"js/mui.min.js",
+			"js/mui.poppicker.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css"
+		],
+		"refer": []
+	},
+	"withdraw deposit.html": {
+		"resources": [
+			"index.html",
+			"css/withdraw deposit.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Add bank card.html": {
+		"resources": [
+			"css/gongyong.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"withdraw deposit.html",
+			"css/Add bank card.css"
+		],
+		"refer": [
+			"withdraw deposit.html"
+		]
+	},
+	"Bonus details.html": {
+		"resources": [
+			"css/gongyong.css",
+			"index.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Transfer management.html": {
+		"resources": [
+			"css/gongyong.css",
+			"js/mui.picker.js",
+			"js/mui.min.js",
+			"js/mui.poppicker.js",
+			"css/Transfer management.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css"
+		],
+		"refer": []
+	},
+	"tradingPlatform.html": {
+		"resources": [
+			"index.html",
+			"css/tradingPlatform.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}

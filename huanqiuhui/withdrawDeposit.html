@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/gongyong.css" />
+		<link rel="stylesheet" type="text/css" href="css/withdrawDeposit.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+
+			<!-- 主页面标题 -->
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-icon mui-icon mui-icon-arrowleft " href="index.html"></a>
+				<h1 class="mui-title">提现</h1>
+			</header>
+			<div class="hao-box6">
+				<input type="button" class="hao-butt" id="hao-butt" value="提现" />
+			</div>
+			<div class="hao-box4">
+				<div class="mui-content">
+
+					<div id="slider" class="mui-slider">
+						<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<a class="mui-control-item" href="#item1mobile">
+								申请提现
+							</a>
+							<a class="mui-control-item" href="#item2mobile">
+								提现记录
+							</a>
+
+						</div>
+						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+								<div id="scroll1" class="mui-scroll-wrapper">
+									<div class="mui-scroll">
+										<div class="hao-box7">
+											<div class="hao-box7-1">
+												<div class="hao-box7-2">
+													银行账户
+												</div>
+												<a href="Add bank card.html">
+													<div class="hao-box7-3">
+
+														暂无银行卡，点击添加
+
+														<span class="mui-icon mui-icon-arrowright ">
+														 	
+														 </span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="hao-box8">
+											<div class="hao-box8-1">
+												<div class="hao-box8-2">
+													转换金额
+												</div>
+												<input type="text" placeholder="输入金额" />
+											</div>
+
+										</div>
+										<div class="hao-box9">
+											<div class="hao-box-9-1">
+												<div class="hao-box9-1-1">
+													提现货币
+												</div>
+												<div class="hao-box9-1-2">
+													佣兵积分
+												</div>
+											</div>
+											<div class="hao-box-9-2">
+												<div class="hao-box9-2-1">
+													汇率
+												</div>
+												<div class="hao-box9-2-2">
+													1.00：0.80
+												</div>
+											</div>
+											<div class="hao-box-9-3">
+												<div class="hao-box9-3-1">
+													到账货币
+												</div>
+												<div class="hao-box9-3-2">
+													人民币
+												</div>
+											</div>
+											<div class="hao-box-9-4">
+												<div class="hao-box9-4-1">
+													余额
+												</div>
+												<div class="hao-box9-4-2">
+													0
+												</div>
+											</div>
+										</div>
+										<div class="hao-box10">
+											<div class="hao-box-10-1">
+
+												<div class="hao-box10-1-1">
+													实际提现额
+												</div>
+												<div class="hao-box10-1-2">
+													0.00
+												</div>
+											</div>
+											<div class="hao-box-10-2">
+												<div class="hao-box10-2-1">
+													实际到账金额
+												</div>
+												<div class="hao-box10-2-2">
+													0.00
+												</div>
+											</div>
+											<div class="hao-box-10-3">
+												<div class="hao-box10-3-1">
+													实际到账银积分
+												</div>
+												<div class="hao-box10-3-2">
+													0.00
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content">
+								<div id="scroll2" class="mui-scroll-wrapper">
+									<div class="mui-scroll">
+										<div class="mui-loading">
+											<div class="mui-spinner">
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+		haun()
+		function haun(){
+			(function($) {
+			$('.mui-scroll-wrapper').scroll({
+				indicators: true //是否显示滚动条
+			});
+			var html2 = '';
+			var item2 = document.getElementById('item2mobile');
+			document.getElementById('slider').addEventListener('slide', function(e) {
+				if(e.detail.slideNumber === 1) {
+					if(item2.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item2.querySelector('.mui-scroll').innerHTML = html2;
+						}, 500);
+					}
+				}
+			});
+			var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+			$('.mui-input-group').on('change', 'input', function() {
+				if(this.checked) {
+					sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+					//force repaint
+					sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+				}
+			});
+		})(mui);
+		}
+</script>

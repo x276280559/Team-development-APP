@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/gongyong.css" />
+		<link rel="stylesheet" type="text/css" href="css/RemittanceTop-up.css" />
+		<link rel="stylesheet" href="css/mui.picker.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+
+			<!-- 主页面标题 -->
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-icon mui-icon mui-icon-arrowleft " href="index.html"></a>
+				<h1 class="mui-title">汇款充值</h1>
+			</header>
+			<div class="hao-box6">
+				<input type="button" class="hao-butt" id="hao-butt" value="提交" />
+			</div>
+			<div class="hao-box4">
+				<div class="mui-content">
+
+					<div id="slider" class="mui-slider">
+						<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<a class="mui-control-item" href="#item1mobile">
+								汇款充值
+							</a>
+							<a class="mui-control-item" href="#item2mobile">
+								汇款记录
+							</a>
+
+						</div>
+						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+								<div id="scroll1" class="mui-scroll-wrapper">
+									<div class="mui-scroll">
+										<div class="hao-box-12">
+											<div class="hao-box-12-1">
+												收款账号
+											</div>
+											<div class="hao-box-12-2">
+												11-11-11
+											</div>
+										</div>
+										<div class="hao-da">
+
+											<div class="hao-box-13" id="hao-box-13-2">
+												<div class="hao-box-13-1">
+													汇款银行
+												</div>
+												<div class="hao-box-13-2" id="diajs">
+													中国银行
+												</div>
+												<span class="mui-icon mui-icon-arrowright">
+													
+												</span>
+											</div>
+											<div class="hao-box-13">
+												<div class="hao-box-13-3">
+													汇款人
+												</div>
+												<input type="text" placeholder="请输入姓名" />
+											</div>
+											<div class="hao-box-13" id="hao-box-13-1">
+												<div class="hao-box-13-5">
+													汇款日期
+												</div>
+												<div class="hao-box-13-6">
+													 2018/5/11 下午4:16:23 
+												</div>
+											</div>
+										</div>
+										<div class="hao-da2">
+											<div class="hao-box-13">
+												<div class="hao-box-14-2">
+													汇款货币
+												</div>
+												<div class="hao-box-13-6">
+													 人民币 
+												</div>
+											</div>
+											<div class="hao-box-13" id="hao-box-13-7">
+												<div class="hao-box-13-5">
+													汇款金额
+												</div>
+												<input type="text" placeholder="请输入金额" />
+											</div>
+										</div>
+										<div class="hao-da3">
+											<div class="hao-box-13" >
+												<div class="hao-box-13-5">
+													到账货币
+												</div>
+												<div class="hao-box-13-2" id="diajss">
+													人民币
+												</div>
+												<span class="mui-icon mui-icon-arrowright">
+													
+												</span>
+											</div>
+											<div class="hao-box-13"id="hao-box-13-7">
+												<div class="hao-box-14-2">
+													到账金额
+												</div>
+												<div class="hao-box-13-6">
+													 0.00
+												</div>
+											</div>
+											
+										</div>
+										<div class="hao-da4">
+											<p>汇款凭证</p>
+											<!--<input type="button" value="" id="hao-inp"/>-->
+											<div id="hao-inp">
+												<img id="hao-img2" src="img/793951bcd1c801f01a801904ff9c1de4.png"/>
+												<p id="hao-p">
+													上传凭证
+												</p>
+											</div>
+										</div>
+									
+									</div>
+								</div>
+							</div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content">
+								<div id="scroll2" class="mui-scroll-wrapper">
+									<div class="mui-scroll">
+										<div class="mui-loading">
+											<div class="mui-spinner">
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/mui.picker.js"></script>
+<script type="text/javascript" src="js/mui.poppicker.js"></script>
+<script type="text/javascript">
+	mui.init({
+		gestureConfig: {
+			tap: true, //默认为true
+			doubletap: true, //默认为false
+			longtap: true, //默认为false
+			swipe: true, //默认为true
+			drag: true, //默认为true
+			hold: false, //默认为false，不监听
+			release: false //默认为false，不监听
+		}
+	});
+	oo()
+function oo(){
+		(function($) {
+		$('.mui-scroll-wrapper').scroll({
+			indicators: true //是否显示滚动条
+		});
+		var html2 = '';
+		var item2 = document.getElementById('item2mobile');
+		document.getElementById('slider').addEventListener('slide', function(e) {
+			if(e.detail.slideNumber === 1) {
+				if(item2.querySelector('.mui-loading')) {
+					setTimeout(function() {
+						item2.querySelector('.mui-scroll').innerHTML = html2;
+					}, 500);
+				}
+			}
+		});
+		var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+		$('.mui-input-group').on('change', 'input', function() {
+			if(this.checked) {
+				sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+				//force repaint
+				sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+			}
+		});
+	})(mui);
+}
+var dias=document.getElementById("diajss")
+dias.onclick=function(){
+	var picker = new mui.PopPicker();
+		picker.setData([{
+			value: "first",
+			text: "人民币",
+		}])
+		picker.pickers[0].setSelectedIndex(4, 2000);
+		picker.show(function(SelectedItem) {
+			var data=SelectedItem[0].text
+			dias.innerHTML=data
+		})
+}
+	var dia=document.getElementById("diajs")
+	dia.onclick=function(){
+		var picker = new mui.PopPicker();
+		picker.setData([{
+			value: "first",
+			text: "中国银行",
+		}, {
+			value: "second",
+			text: "中国工商银行"
+		}, {
+			value: "third",
+			text: "中国农业银行"
+		},{
+			value: "first",
+			text: "中国建设银行",
+		}, {
+			value: "second",
+			text: "交通银行"
+		}, {
+			value: "third",
+			text: "招商银行"
+		},{
+			value: "first",
+			text: "中信银行",
+		}, {
+			value: "second",
+			text: "中国邮政储蓄银行"
+		}, {
+			value: "third",
+			text: "平安银行"
+		},{
+			value: "first",
+			text: "兴业银行",
+		}, {
+			value: "second",
+			text: "中国民生银行"
+		}, {
+			value: "third",
+			text: "中国光大银行"
+		},{
+			value: "first",
+			text: "上海浦东发展银行",
+		}, {
+			value: "second",
+			text: "广发银行"
+		}, {
+			value: "third",
+			text: "北京银行"
+		}])
+		picker.pickers[0].setSelectedIndex(4, 2000);
+		picker.show(function(SelectedItem) {
+			var data=SelectedItem[0].text
+			dia.innerHTML=data
+		})
+	}
+	var img=document.getElementById("hao-img2")
+	var inpt=document.getElementById("hao-inp")
+	var p=document.getElementById("hao-p")
+	inpt.onclick=function(){
+		plus.gallery.pick(
+			function(path) {
+				for(k in path.files) {
+
+					img.src = path.files[k]
+					img.style.width="100%"
+					inpt.removeChild(p)
+					img.style.margin="0"
+				}
+			},
+			function(e) {
+				mui.toast(e.message)
+			}, {
+				filter: "image",
+				system: false,
+				multiple: true,
+				maximum: 1
+			}
+		)
+	}
+</script>

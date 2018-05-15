@@ -1,0 +1,61 @@
+.hao-box5{
+	width:100%;
+	height: 100px;
+	background: #FFFFFF;
+	margin-top: 54px;
+	padding: 10px;
+}
+#showUserPicker{
+	width: 25%;
+	height: 100%;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 31px;
+	float: left;
+}
+.hao-box5-1{
+	width: 100%;
+	height: 40%;
+	/*border: 1px solid #000000;*/
+	padding-top: 10px;
+}
+.hao-box5-2{
+	width: 100%;
+	height: 40%;
+}
+#showUserPicker2{
+	width: 25%;
+	height: 100%;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 31px;
+	float: left;
+}
+#showUserPicker3, #showUserPicker4{
+	width: 50%;
+	height: 100%;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 31px;
+	/*float: left;*/
+	margin-left: 26%;
+}
+.mui-bar-nav~.mui-content{
+	padding-top: 0px;
+	background: #FFFFFF;
+}
+.mui-title{
+	font-size: 18px;
+	color:#CCCCCC;
+}
+.hao-box5-3{
+	width: 75px;
+	height: 75px;
+	background: red;
+	position: absolute;
+	right: 5px;
+	top: 65px;
+	}
+	#info {
+				padding: 20px 10px;
+			}

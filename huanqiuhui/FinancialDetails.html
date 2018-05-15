@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/gongyong.css" />
+		<link rel="stylesheet" type="text/css" href="css/cw.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.poppicker.css" />
+	</head>
+
+	<body>
+
+		<body>
+			<!-- 菜单容器 -->
+			<div class="mui-inner-wrap">
+
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-icon mui-icon-arrowleft " href="index.html"></a>
+					<h1 class="mui-title">财务明细</h1>
+				</header>
+
+				<div class="mui-content">
+
+					<div class="mui-content-padded">
+						<div class="hao-box5-1">
+							<button id='showUserPicker2' class="mui-btn mui-btn-block" type='button'>积分类型<span class="mui-icon mui-icon-arrowdown"></span></button>
+							<button id='showUserPicker3' class="mui-btn mui-btn-block" type='button'>初始时间<span class="mui-icon mui-icon-arrowright"></span></button>
+						</div>
+						<div class="hao-box5-2">
+
+							<button id='showUserPicker' class="mui-btn mui-btn-block" type='button'>财务类型<span class="mui-icon mui-icon-arrowdown"></span></button>
+							<button id='showUserPicker4' class="mui-btn mui-btn-block" type='button'>结束时间<span class="mui-icon mui-icon-arrowright"></span></button>
+						</div>
+						<div class="hao-box5-3">
+
+						</div>
+					</div>
+					<div id="info"></div>
+				</div>
+			</div>
+			</div>
+
+		</body>
+
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/mui.picker.js">
+</script>
+<script type="text/javascript" src="js/mui.poppicker.js">
+</script>
+<script type="text/javascript">
+	mui.init({
+				swipeBack: true //启用右滑关闭功能
+			})
+	var bt = document.getElementById("showUserPicker2")
+	var bt2 = document.getElementById("showUserPicker")
+	var bt3 = document.getElementById("showUserPicker3")
+	var bt4 = document.getElementById("showUserPicker4")
+	bt.onclick = function() {
+		var picker = new mui.PopPicker();
+		picker.setData([{
+			value: "first",
+			text: "积分类型",
+		}, {
+			value: "second",
+			text: "现金积分"
+		}, {
+			value: "third",
+			text: "消费积分"
+		}, {
+			value: "third",
+			text: "金积分"
+		}, {
+			value: "third",
+			text: "银积分"
+		}, {
+			value: "third",
+			text: "佣兵积分"
+		}, {
+			value: "third",
+			text: "AEQ"
+		}, {
+			value: "third",
+			text: "AEQr"
+		}])
+		picker.pickers[0].setSelectedIndex(4, 2000);
+		picker.show(function(SelectedItem) {
+			var data = SelectedItem[0].text
+			bt.innerHTML = data
+		})
+	}
+	bt2.onclick = function() {
+		var picker = new mui.PopPicker();
+		picker.setData([{
+			value: "first",
+			text: "财务类型",
+		}, {
+			value: "second",
+			text: "订单支付"
+		}, {
+			value: "third",
+			text: "复投扣款"
+		}, {
+			value: "third",
+			text: "复投奖励"
+		}, {
+			value: "third",
+			text: "购买激活码"
+		}, {
+			value: "third",
+			text: "后台充值记录"
+		}, {
+			value: "third",
+			text: "提现成功"
+		}, {
+			value: "third",
+			text: "提现申请"
+		}, {
+			value: "third",
+			text: "拒绝提现"
+		}, {
+			value: "third",
+			text: "佣金积分转金积分"
+		}, {
+			value: "third",
+			text: "佣金积分转现金积分"
+		}, {
+			value: "third",
+			text: "金积分转现金积分"
+		}, {
+			value: "third",
+			text: "购买AEQ币"
+		}, {
+			value: "third",
+			text: "获得AEQ币"
+		}, {
+			value: "third",
+			text: "出售AEQ币"
+		}, {
+			value: "third",
+			text: "返还AEQ币"
+		}, {
+			value: "third",
+			text: "返还金积分"
+		}, {
+			value: "third",
+			text: "出售AEQ币获得金积分"
+		}, {
+			value: "third",
+			text: "下级复投奖励"
+		}, {
+			value: "third",
+			text: "每日释放"
+		}, {
+			value: "third",
+			text: "同意汇款"
+		}, {
+			value: "third",
+			text: "区域代理返利"
+		}, {
+			value: "third",
+			text: "区域代理推荐人返利"
+		}])
+		picker.pickers[0].setSelectedIndex(4, 2000);
+		picker.show(function(SelectedItem) {
+			var data = SelectedItem[0].text
+			bt2.innerHTML = data
+			bt2.style.width = "50%"
+			bt4.style.width = "26%"
+		})
+	}
+		var info = document.getElementById("info");
+			
+			document.getElementById("showUserPicker3").addEventListener('tap', function() {
+				var dDate = new Date();
+				dDate.setFullYear(2014, 7, 16);
+				var minDate = new Date();
+				minDate.setFullYear(2010, 0, 1);
+				var maxDate = new Date();
+				maxDate.setFullYear(2016, 11, 31);
+				plus.nativeUI.pickDate(function(e) {
+					var d = e.date;
+					info.innerText = '您选择的日期是:' + d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+				}, function(e) {
+					info.innerText = "您没有选择日期";
+				}, {
+					title: "请选择日期",
+					date: dDate,
+					minDate: minDate,
+					maxDate: maxDate
+				});
+			})
+	bt4.onclick = function() {
+		alert("4")
+	}
+	document.addEventListener('plusready',function(){
+		
+	})
+</script>

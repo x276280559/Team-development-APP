@@ -1,0 +1,640 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/personalCenter.css" />
+	</head>
+
+	<body>
+
+		<!-- 主页面容器 -->
+		<div class="mui-inner-wrap">
+			<!-- 菜单容器 -->
+
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="#tabbar">
+					<span class="mui-icon-home mui-icon"></span>
+					<span class="mui-tab-label">AEQ交易</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-chat">
+					<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+					<span class="mui-tab-label">商城</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-contact">
+					<span class="mui-icon mui-icon-contact"></span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-map">
+					<span class="mui-icon mui-icon-gear"></span>
+					<span class="mui-tab-label">个人中心</span>
+				</a>
+			</nav>
+			<div class="mui-content hao-box1">
+				<div id="tabbar" class="mui-control-content mui-active">
+					<!--head start-->
+					<header>
+						<div id="box">
+							<h6 id="hao-h6">金积分余额（元）</h6>
+							<span id="hao-spn1">
+										AEQ数量    
+									</span>
+							<span id="hao-spn2">
+										>AEQ价值    NaN
+									</span>
+						</div>
+						<div class="box2">
+							<img id="hao-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkZDRkNjdkNS00ZTViLWJjNDQtODc3Yi1mZTg2NDRlNzVlYmEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTVBMkYwRTMzRUM1MTFFODk0ODY4RDU1Q0VGNTQ1MDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTVBMkYwRTIzRUM1MTFFODk0ODY4RDU1Q0VGNTQ1MDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI1NTQ5YTViLTVhYTItYmI0YS1hOTQxLTZhMDc3ZmVmNTFiZiIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjc4MGNmNDMxLTQ3YjMtNTA0Yy05M2EyLTc5YjljOTM3OGQyYyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtgrxKkAAAKOSURBVHja7JfdSxRRGMbXRRE1EWQFL0TNhKT8Qm/0Qr1QQUGo6EOK9MJC6h8QQfAqEPFSLxRBxAtFBJFCFERr6yaiIsjUKBBkMQgtVvG7sueFZ+AwnHFndpdZLzzwE9+Z95x55rwfczYur/CJJ4bjKrgHSuNj8PAroJkCSnit1y0hiaANPAZlmvszXpeEHIFBcBtMme5tgndeF0NyCu4QdTwH/yIVkubA9xnoA3HyYLBihEX+RCKkHgzb8JMHD4Au2n9AK+gAQfBSLoabrDV8kx8h/GT9EdBC+5DV8gIkgWlwHK6QSi6UDC6DFLBnUSmT4AbtXXATLNE+AN2Gs9PQlIM5kKrML9D4XQKziohfoE4RYYxAOEKKwLwmQa+b7HSwAGppS/iqpUTPWtyuEHnrReCj7VfuFSr/Z4JXoIL2OqgCXzw2kinUyOcbZtCWBHvAjJc8uMbrufTLp73KcGxq1st1KiSbO5FFW+J+n5n+FRRzRwoowvB7DxrAtmbNR6DTSWiyKCKb9gK74jHtZUXsG0WEn/mx7aQKrIRkmLb5NUvvUPFZURqWT9mxRrDjtCfohPi4E0ZZvgVNYN/kt2yyJ8At9gdPpELSWKJFtD8w1ruauWolDLF7noT7vVCTNZUiyml/poigxdx1vn0/k09a9qjGb9z4sNkRksy2bdT/Gktv64y5f8FDlrOMBHBX4/fRbmgSqbiG177zy/rTxvzpaB1WvEyyetobLL2A2wdZETLG3hCgiI1YHOfjGRZpVN8YFqtRxhO4OvbZO6IixMNEDTXkBP7UdE12LydaoTkX40KILkfkRNVj0RH9bgqR82W75t4nN4Vc5Mi5Tlb5Hfrb4he8uYua/YLREvJfgAEANZiApFTjVFMAAAAASUVORK5CYII=" />
+							<span>AEQ价格走势图</span>
+						</div>
+					</header>
+					<!--head over-->
+					<!--走势图 start-->
+					<div class="hao-box2" id="main">
+
+					</div>
+					<!--走势图 over-->
+					<!--挂单列表 start-->
+					<div class="kong">
+
+					</div>
+					<div class="hao-box3">
+						<div class="hao-box3-1">
+							<span class="hao-span1">
+									挂单列表
+								</span>
+							<span class="hao-span2">
+								<a href="tradingPlatform.html">
+										查看更多>>
+								</a>
+								
+								</span>
+						</div>
+						<div class="hao-box3-2">
+							<ul>
+								<li>会员编号</li>
+								<li>挂单类型</li>
+								<li>剩余数量</li>
+								<li>挂单价格</li>
+								<li>挂单日期</li>
+
+							</ul>
+						</div>
+						<table>
+							<tr>
+								<th>haeder</th>
+								<th>Header</th>
+								<th>Header</th>
+								<th>Header</th>
+								<th>Header</th>
+							</tr>
+						</table>
+					</div>
+					<!--挂单列表 over-->
+					<!--交易系统 start-->
+					<div class="hao-box4">
+						<div class="mui-content">
+
+							<div id="slider" class="mui-slider">
+								<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+									<a class="mui-control-item" href="#item1mobile">
+										系统交易
+									</a>
+									<a class="mui-control-item" href="#item2mobile">
+										挂买单
+									</a>
+									<a class="mui-control-item" href="#item3mobile">
+										出售
+									</a>
+								</div>
+								<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+								<div class="mui-slider-group">
+									<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+										<div id="scroll1" class="mui-scroll-wrapper">
+											<div class="mui-scroll">
+												<ul class="mui-table-view">
+													<li class="mui-table-view-cell">
+														系统AEQ数量　　<span>1</span>
+													</li>
+													<li class="mui-table-view-cell">
+														AEQ价格　　<span>2.38</span>
+													</li>
+													<li class="mui-table-view-cell">
+														购买数量 :*　　<span>必填</span>
+													</li>
+													<li class="mui-table-view-cell" id="hao-li">
+														支付方式　　<span class="mui-icon mui-icon-arrowright"></span><span>金积分</span>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div id="item2mobile" class="mui-slider-item mui-control-content">
+										<div id="scroll2" class="mui-scroll-wrapper">
+											<div class="mui-scroll">
+												<div class="mui-loading">
+													<div class="mui-spinner">
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div id="item3mobile" class="mui-slider-item mui-control-content">
+										<div id="scroll3" class="mui-scroll-wrapper">
+											<div class="mui-scroll">
+												<div class="mui-loading">
+													<div class="mui-spinner">
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+								<input type="button" id="hao-bttn" value="确定" />
+							</div>
+
+						</div>
+					</div>
+
+					<!-- 交易系统 over -->
+
+				</div>
+				<div id="tabbar-with-chat" class="mui-control-content">
+
+				</div>
+				<div id="tabbar-with-contact" class="mui-control-content">
+
+				</div>
+				<div id="tabbar-with-map" class="mui-control-content">
+					<div class="max">
+						<!--头部  --start-->
+						<div class="m-top">
+							<div class="m-header">
+								<div class="mh-lefe">
+									<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+								</div>
+								<div class="mh-center">
+									<p>个人中心</p>
+								</div>
+								<div class="mh-right">
+									<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-right"></a>
+								</div>
+							</div>
+							<div class="dataInfo">
+								<div class="infoBox">
+									<div class="p-img">
+										<img src="img/user-photo.4d1e36f.png">
+									</div>
+									<div class="p-details">
+										<div class="p-user">
+											<p class="userName"></p>
+										</div>
+										<p class="userTel"></p>
+									</div>
+									<div class="p-vip">
+										<p></p>
+									</div>
+								</div>
+								<div class="user-box">
+									<p>
+										<img src="img/xiazai.png" />
+										<span></span>
+									</p>
+									<p>
+										<img src="img/xinfeng.png" />
+										<span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--头部  --end-->
+						<!--内容 --start-->
+						<div class="content">
+							<div class="contentBox">
+								<div class="myAeqr">
+									<h4 style="margin-bottom:10px;padding-left:20px;">我的账户</h4>
+									<ul class="myMoney">
+										<li>
+											<p>AEQ币</p>
+											<p style="font-size: 14px; color: rgb(0, 0, 0); font-weight: 700;"></p>
+										</li>
+										<li>
+											<p>消费积分</p>
+											<p style="font-size: 14px; color: rgb(0, 0, 0); font-weight: 700;"></p>
+										</li>
+										<li>
+											<p>佣金积分</p>
+											<p style="font-size: 14px; color: rgb(0, 0, 0); font-weight: 700;"></p>
+										</li>
+									</ul>
+								</div>
+								<div class="xiaofei">
+									<h4 style="padding-left:15px;">消费总览</h4>
+									<div class="xf_in">
+										<div id="a" style="width:175px;height:244px;float:left;"></div>
+										<div class="xiaofei_r">
+											<li class="li_p01">
+												<p></p>
+												<span>现金积分</span>
+												<span></span>
+											</li>
+											<li class="li_p02">
+												<p></p>
+												<span>金积分</span>
+												<span></span>
+											</li>
+											<li class="li_p03">
+												<p></p>
+												<span>银积分</span>
+												<span></span>
+											</li>
+											<li class="li_p04">
+												<p></p>
+												<span>AEQr币</span>
+												<span></span>
+											</li>
+											<li class="li_p05">
+												<p></p>
+												<span>AEQC币</span>
+												<span></span>
+											</li>
+											<li class="li_p06">
+												<p></p>
+												<span>AEQC锁仓币</span>
+												<span></span>
+											</li>
+											<li class="li_p07">
+												<p></p>
+												<span>AEQC可交易币</span>
+												<span></span>
+											</li>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="m-navlist">
+							<div class="nav-base">
+								<div class="list-details">
+									<div class="nav_l phone">
+										<p>手机充值</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+							</div>
+							<div class="nav-base">
+								<div class="list-details">
+									<div class="nav_l code">
+										<p>我的二维码</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+							</div>
+							<div id="b" class="nav-base">
+								<div class="list-details">
+									<div class="nav_l shichang">
+										<p>市场管理</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+								<div id="navlist">
+									<div id="one" class="nav-details nav-position01" style="display: none;">
+										<div class="nav-details-l">
+											<p>注册会员</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="two" class="nav-details nav-position02" style="display: none;">
+										<div class="nav-details-l">
+											<p>在线升级</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="three" class="nav-details nav-position03" style="display: none;">
+										<div class="nav-details-l">
+											<p>在线复投</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="four" class="nav-details nav-position04" style="display: none;">
+										<div class="nav-details-l">
+											<p>购买激活码</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="nav-base">
+								<div class="list-details wife-management">
+									<div class="nav_l wife">
+										<p>网络管理</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+							</div>
+							<!--财务管理-->
+							<div id="c" class="nav-base">
+								<div id="five" class="list-details">
+									<div class="nav_l money">
+										<p>财务管理</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+								<div id="navlist">
+									<div id="six" class="nav-details nav-position01" style="display: none;">
+										<div class="nav-details-l">
+											<p>奖金明细</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="seven" class="nav-details nav-position02" style="display: none;">
+										<div class="nav-details-l">
+											<p>财务明细</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="eight" class="nav-details nav-position03" style="display: none;">
+										<div class="nav-details-l">
+											<p>汇款充值</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+
+									<div id="nine" class="nav-details nav-position04" style="display: none;">
+										<div class="nav-details-l">
+											<p>转账管理</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="ten" class="nav-details nav-position05" style="display: none;">
+										<div class="nav-details-l">
+											<p>货币兑换</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="eleven" class="nav-details nav-position06" style="display: none;">
+										<div class="nav-details-l">
+											<p>提现管理</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="twelve" class="nav-details nav-position07" style="display: none;">
+										<div class="nav-details-l">
+											<p>银行账号</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--订单管理-->
+							<div id="d" class="nav-base">
+								<div class="list-details">
+									<div class="nav_l order">
+										<p>订单管理</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+								<div id="navlist">
+									<div id="thirteen" class="nav-details nav-position01" style="display: none;">
+										<div class="nav-details-l">
+											<p>实物订单</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="fourteen" class="nav-details nav-position02" style="display: none;">
+										<div class="nav-details-l">
+											<p>虚拟订单</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="e" class="nav-base">
+								<div class="list-details">
+									<div class="nav_l info">
+										<p>信息管理</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+								<div id="navlist">
+									<div id="fiveteen" class="nav-details nav-position01" style="display: none;">
+										<div class="nav-details-l">
+											<p>系统公告</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="sixteen" class="nav-details nav-position02" style="display: none;">
+										<div class="nav-details-l">
+											<p>留言提交</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="eighteen" class="nav-details nav-position03" style="display: none;">
+										<div class="nav-details-l">
+											<p>我的留言</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--地址管理-->
+							<div id="f" class="nav-base">
+								<div class="list-details">
+									<div class="nav_l address">
+										<p>地址管理</p>
+									</div>
+									<div class="nav_r">
+										<a class="mui-icon mui-icon-forward"></a>
+									</div>
+								</div>
+								<div id="navlist">
+									<div id="nineteen" class="nav-details nav-position01" style="display: none;">
+										<div class="nav-details-l">
+											<p>我的地址</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+									<div id="twenty" class="nav-details nav-position02" style="display: none;">
+										<div class="nav-details-l">
+											<p>添加地址</p>
+										</div>
+										<div class="nav-details-r">
+											<a class="mui-icon mui-icon-forward"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--内容 --end-->
+					</div>
+				</div>
+
+	</body>
+
+</html>
+<script type="text/javascript" src="js/echarts.min.js">
+</script>
+<script type="text/javascript" src="js/center.js">
+	
+</script>
+<script src="js/mui.min.js"></script>
+
+<script type="text/javascript">
+	mui.init(
+
+	)
+	var min = document.getElementById("main")
+	var minone = document.getElementById("a")
+	var chars = [];
+	var myChart = echarts.init(min);
+	var option = {
+		xAxis: {
+			type: 'category',
+			data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+		},
+		yAxis: {
+			type: 'value'
+		},
+		series: [{
+			data: [820, 932, 901, 934, 1290, 1330, 1320],
+			type: 'line'
+		}]
+	};
+	myChart.setOption(option);
+	chars.push(myChart)
+	window.onresize = function() {
+		for(var i = 0; i < chars.length; i++) {
+			chars[i].resize()
+		}
+	}
+	//饼状图形区
+	var myChart = echarts.init(minone);
+	//console.log(myechart)
+	option = {
+		tooltip: {
+			trigger: 'item',
+			confine: 'true',
+			position: 'inside',
+			formatter: "{a} <br/>{b} : {c} ({d}%)"
+		},
+		calculable: true,
+		series: [ {
+            name:'访问来源',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+			data: [{
+					value: 335,
+					name: '现金积分'
+				},
+				{
+					value: 310,
+					name: '金积分'
+				},
+				{
+					value: 234,
+					name: '银积分'
+				},
+				{
+					value: 135,
+					name: 'AEQr币'
+				},
+				{
+					value: 135,
+					name: 'AEQC币'
+				},
+				{
+					value: 135,
+					name: 'AEQC锁仓币'
+				},
+				{
+					value: 135,
+					name: 'AEQC可交易币'
+				}
+			]
+		}]
+	};
+	myChart.setOption(option);
+	//列表区
+	chars.push(myChart)
+	window.onresize = function() {
+		for(var i = 0; i < chars.length; i++) {
+			chars[i].resize()
+		}
+	}
+	hd();
+</script>

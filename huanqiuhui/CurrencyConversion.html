@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/gongyong.css" />
+		<link rel="stylesheet" type="text/css" href="css/CurrencyConversion.css" />
+		<link rel="stylesheet" href="css/mui.picker.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+
+			<!-- 主页面标题 -->
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-icon mui-icon mui-icon-arrowleft " href="index.html"></a>
+				<h1 class="mui-title">货币兑换</h1>
+			</header>
+			<div class="hao-box6">
+				<input type="button" class="hao-butt" id="hao-butt" value="提交" />
+			</div>
+			<div class="hao-box4">
+				<div class="mui-content">
+
+					<div id="slider" class="mui-slider">
+						<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<a class="mui-control-item" href="#item1mobile">
+								货币兑换
+							</a>
+							<a class="mui-control-item" href="#item2mobile">
+								兑换记录
+							</a>
+
+						</div>
+						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+								<div id="scroll1" class="mui-scroll-wrapper">
+									<div class="mui-scroll">
+
+										<div class="hao-box9">
+											<div class="hao-box-9-1">
+												<div class="hao-box9-1-1">
+													转换货币
+												</div>
+												<div class="hao-box9-1-2" id="dian">
+													佣兵积分转金积分
+
+													
+												</div><span class="mui-icon mui-icon-arrowright hao-icon">
+															
+														</span>
+											</div>
+											<div class="hao-box-9-2">
+												<div class="hao-box9-2-1">
+													转换金额
+												</div>
+												<div class="hao-box9-2-2">
+													<input type="text" placeholder="请输入金额" />
+												</div>
+											</div>
+											<div class="hao-box-9-3">
+												<div class="hao-box9-3-1">
+													转换比例
+												</div>
+												<div class="hao-box9-3-2">
+													1.00：0.90
+												</div>
+											</div>
+
+										</div>
+										<div class="hao-box10">
+											<div class="hao-box-10-1">
+
+												<div class="hao-box10-1-1">
+													转出积分
+												</div>
+												<div class="hao-box10-1-2">
+													0.00
+												</div>
+											</div>
+											<div class="hao-box-10-2">
+												<div class="hao-box10-2-1">
+													转入积分
+												</div>
+												<div class="hao-box10-2-2">
+													0.00
+												</div>
+											</div>
+											<div class="hao-box-10-3">
+												<div class="hao-box10-3-1">
+													佣兵积分余额
+												</div>
+												<div class="hao-box10-3-2">
+
+												</div>
+											</div>
+											<div class="hao-box-10-3">
+												<div class="hao-box10-3-1">
+													金积分余额
+												</div>
+												<div class="hao-box10-3-2">
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content">
+								<div id="scroll2" class="mui-scroll-wrapper">
+									<div class="mui-scroll">
+										<div class="mui-loading">
+											<div class="mui-spinner">
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/mui.picker.js"></script>
+<script type="text/javascript" src="js/mui.poppicker.js"></script>
+<script type="text/javascript">
+	
+mui.init({
+  gestureConfig:{
+   tap: true, //默认为true
+   doubletap: true, //默认为false
+   longtap: true, //默认为false
+   swipe: true, //默认为true
+   drag: true, //默认为true
+   hold:false,//默认为false，不监听
+   release:false//默认为false，不监听
+  }
+});
+		(function($) {
+			$('.mui-scroll-wrapper').scroll({
+				indicators: true //是否显示滚动条
+			});
+			var html2 = '';
+			var item2 = document.getElementById('item2mobile');
+			document.getElementById('slider').addEventListener('slide', function(e) {
+				if(e.detail.slideNumber === 1) {
+					if(item2.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item2.querySelector('.mui-scroll').innerHTML = html2;
+						}, 500);
+					}
+				}
+			});
+			var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+			$('.mui-input-group').on('change', 'input', function() {
+				if(this.checked) {
+					sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+					//force repaint
+					sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+				}
+			});
+		})(mui);
+
+var dia=document.getElementById("dian")
+dia.onclick=function(){
+	var picker = new mui.PopPicker();
+	picker.setData([{
+		value: "first",
+		text: "佣兵积分转金积分",
+	}, {
+		value: "second",
+		text: "佣兵积分转现金积分"
+	}, {
+		value: "third",
+		text: "金积分转现金积分"
+	}])
+	picker.pickers[0].setSelectedIndex(4, 2000);
+	picker.show(function(SelectedItem) {
+		var data=SelectedItem[0].text
+		dia.innerHTML=data
+	})
+}
+ 
+	
+</script>
