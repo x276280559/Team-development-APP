@@ -1,0 +1,90 @@
+<!--在线升级页面-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mui.picker.all.css" />
+		<link rel="stylesheet" href="../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../css/Online-upgrade.css" />
+	</head>
+	<body>
+		<!--头部结构-->
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">在线升级</h1>
+		</header>
+		<!--内容区在线升级切换-->
+		<div class="mui-content">
+		    <div class="mui-slider">
+		        <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted"style="background:#fff;">
+		            <a class="mui-control-item" href="#item1">在线升级</a>
+		            <a class="mui-control-item" href="#item2">会员级别</a>
+		        </div>
+		        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+		        <div style="height:20px;width:100%;"></div>
+		        <div class="mui-slider-group">
+		            <div id="item1" class="item-border mui-slider-item mui-control-content mui-active">
+		                <ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">当前会员等级</li>
+		                    <li class="mui-table-view-cell li-span">
+		                    	升级后会员等级
+		                    	<span id="shopHome">商家</span>
+		                    	<span class="mui-icon mui-icon-forward mui-pull-right"></span>
+		                    </li>
+		                </ul>
+		                <div class="d-Input">
+		                	<input type="button" value="确认" />
+		            	</div>
+		            </div>
+		            <div id="item2" class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                    <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript" src="../js/mui.picker.min.js" ></script>
+<script type="text/javascript" src="../js/mui.picker.all.js" ></script>
+<script type="text/javascript" src="../js/mui.poppicker.js" ></script>
+<script type="text/javascript">
+	mui.init()
+	var Iispan = document.querySelector(".li-span");
+ 	var ShopHome = document.getElementById("shopHome");
+	//console.log(ShopHome)
+	//点击li,弹出picker框
+	Iispan.addEventListener("tap",function(){
+		//console.log("haha")
+		var picker = new mui.PopPicker();
+		picker.setData([{
+		    value: "first",
+		    text: "商家"
+		}, {
+		    value: "second",
+		    text: "经理"
+		}, {
+		    value: "third",
+		    text: "运营中心"
+		}])
+		//picker.pickers[0].setSelectedIndex(4, 2000);
+//		picker.pickers[0].setSelectedValue('fourth', 2000);
+		picker.show(function(SelectedItem) {
+			
+			//console.log(ShopHometext)    //打印出商家
+			//console.log(selectItems[0].text)
+			var SelectedItem = SelectedItem[0].text;  //获取点击弹出文本
+			ShopHome.innerHTML = SelectedItem;     //替换添加到页面
+		})
+	},false)
+	
+</script>

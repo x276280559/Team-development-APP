@@ -1,0 +1,28 @@
+/*在线升级样式*/
+*{
+	margin:0px;padding:0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.mui-bar .mui-icon-left-nav,
+.li-span span:nth-child(2){
+	！important;color:#ccc;
+}
+.li-span span{
+	！important;padding-left:14px;
+}
+.d-Input {
+	padding-top:50px;width:100%;text-align: center;padding-bottom: 400px;
+}
+/*自改mui框架中的样式*/
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-bottom:none;important;
+}
+.d-Input input{
+	width:60%;padding:6px 0;border-radius:8vw;background:#345ff1;
+	line-height: 14vw;font-size:6vw;color:#fff;
+}

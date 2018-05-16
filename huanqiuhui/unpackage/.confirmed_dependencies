@@ -1,386 +1,386 @@
 {
-	"index.html": {
-		"resources": [
-			"css/index.css",
-			"js/echarts.min.js",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"trading platform.html",
-			"Financial details.html",
-			"js/center.js",
-			"css/personal center.css",
-			"img/xiazai.png",
-			"img/xinfeng.png",
-			"img/user-photo.4d1e36f.png",
-			"img/info.png",
-			"img/shichang.png",
-			"img/phone.png",
-			"img/address.png",
-			"img/wife.png",
-			"img/order.png",
-			"img/code.png",
-			"img/hd_bg.png",
-			"img/money.png",
-			"tradingPlatform.html",
-			"css/personalCenter.css",
-			"personalSetting.html",
-			"page/Activation-code.html",
-			"page/OrderList.html",
-			"page/index.html",
-			"page/registered.html"
-		],
-		"refer": [
-			"trading platform.html",
-			"Financial details.html",
-			"tradingPlatform.html",
-			"personalSetting.html",
-			"PrePaid-phone.html",
-			"financialManagement/BonusDetails.html",
-			"page/PrePaid-phone.html",
-			"page/code.html",
-			"page/registered.html",
-			"page/Online-upgrade.html",
-			"page/Online-after-shots.html",
-			"page/Activation-code.html",
-			"page/OrderList.html",
-			"page/index.html"
-		]
-	},
-	"trading platform.html": {
-		"resources": [
-			"css/trading platform.css",
-			"index.html",
-			"css/mui.min.css"
-		],
-		"refer": [
-			"index.html"
-		]
-	},
-	"Currency conversion.html": {
-		"resources": [
-			"css/gongyong.css",
-			"js/mui.picker.js",
-			"js/mui.min.js",
-			"js/mui.poppicker.js",
-			"fonts/mui.ttf",
-			"css/Currency conversion.css",
-			"css/mui.min.css",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css",
-			"index.html"
-		],
-		"refer": []
-	},
-	"Financial details.html": {
-		"resources": [
-			"css/gongyong.css",
-			"js/mui.picker.js",
-			"js/mui.min.js",
-			"js/mui.poppicker.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css",
-			"css/cw.css",
-			"index.html"
-		],
-		"refer": [
-			"index.html"
-		]
-	},
-	"Remittance top-up.html": {
-		"resources": [
-			"css/gongyong.css",
-			"js/mui.picker.js",
-			"img/793951bcd1c801f01a801904ff9c1de4.png",
-			"css/Remittance top-up.css",
-			"js/mui.min.js",
-			"js/mui.poppicker.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css"
-		],
-		"refer": []
-	},
-	"withdraw deposit.html": {
-		"resources": [
-			"index.html",
-			"css/withdraw deposit.css"
-		],
-		"refer": [
-			"index.html"
-		]
-	},
-	"Add bank card.html": {
-		"resources": [
-			"css/gongyong.css",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"withdraw deposit.html",
-			"css/Add bank card.css"
-		],
-		"refer": [
-			"withdraw deposit.html"
-		]
-	},
-	"Bonus details.html": {
-		"resources": [
-			"css/gongyong.css",
-			"index.html",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css"
-		],
-		"refer": [
-			"index.html"
-		]
-	},
-	"Transfer management.html": {
-		"resources": [
-			"css/gongyong.css",
-			"js/mui.picker.js",
-			"js/mui.min.js",
-			"js/mui.poppicker.js",
-			"css/Transfer management.css",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css"
-		],
-		"refer": []
-	},
-	"tradingPlatform.html": {
-		"resources": [
-			"index.html",
-			"css/tradingPlatform.css",
-			"XMB.html"
-		],
-		"refer": [
-			"index.html",
-			"XMB.html"
-		]
-	},
-	"personalSetting.html": {
-		"resources": [
-			"css/gongyong.css",
-			"css/personalSetting.css",
-			"modifiedData.html",
-			"changePassword.html",
-			"index.html"
-		],
-		"refer": [
-			"modifiedData.html",
-			"changePassword.html",
-			"index.html"
-		]
-	},
-	"modifiedData.html": {
-		"resources": [
-			"css/modifiedData.css",
-			"personalSetting.html"
-		],
-		"refer": [
-			"personalSetting.html"
-		]
-	},
-	"changePassword.html": {
-		"resources": [
-			"js/mui.picker.js",
-			"css/changePassword.css",
-			"js/mui.poppicker.js",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css",
-			"personalSetting.html"
-		],
-		"refer": [
-			"personalSetting.html"
-		]
-	},
-	"PrePaid-phone.html": {
-		"refer": [
-			"index.html"
-		]
-	},
-	"financialManagement/BonusDetails.html": {
-		"refer": [
-			"index.html"
-		]
-	},
-	"page/PrePaid-phone.html": {
-		"refer": [
-			"index.html"
-		]
-	},
-	"page/registered.html": {
-		"refer": [
-			"index.html"
-		],
-		"resources": [
-			"img/registered_Id_number.png",
-			"img/registered_phone.png",
-			"index.html",
-			"img/registered_name.png",
-			"img/registered_emall.png",
-			"css/registered.css",
-			"img/registered_referees.png",
-			"img/registered_pwd.png",
-			"img/registered_image.png"
-		]
-	},
-	"page/Online-upgrade.html": {
-		"refer": [
-			"index.html"
-		]
-	},
-	"page/Activation-code.html": {
-		"refer": [
-			"index.html"
-		],
-		"resources": [
-			"index.html",
-			"css/Activation-code.css"
-		]
-	},
-	"page/Online-after-shots.html": {
-		"refer": [
-			"index.html"
-		]
-	},
-	"page/OrderList.html": {
-		"resources": [
-			"js/mui.js"
-		],
-		"refer": [
-			"XMB.html"
-		]
-	},
-	"page/index.html": {
-		"resources": [
-			"index.html",
-			"XMB.html",
-			"page/OrderList.html"
-		],
-		"refer": [
-			"index.html",
-			"XMB.html",
-			"page/OrderList.html"
-		]
-	},
-	"XMB.html": {
-		"resources": [
-			"css/index.css",
-			"js/echarts.min.js",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"js/center.js",
-			"css/mui.min.css",
-			"img/xiazai.png",
-			"img/xinfeng.png",
-			"img/user-photo.4d1e36f.png",
-			"css/personalCenter.css",
-			"img/info.png",
-			"page/OrderList.html",
-			"img/shichang.png",
-			"img/phone.png",
-			"img/address.png",
-			"img/wife.png",
-			"img/order.png",
-			"img/code.png",
-			"img/hd_bg.png",
-			"page/index.html",
-			"img/money.png",
-			"tradingPlatform.html",
-			"page/MessageSubmit.html",
-			"page/SystemAnnouncement.html",
-			"page/AddTheAddress.html",
-			"page/ShippingAddress.html"
-		],
-		"refer": [
-			"page/OrderList.html",
-			"page/index.html",
-			"tradingPlatform.html",
-			"page/MessageSubmit.html",
-			"page/SystemAnnouncement.html",
-			"page/AddTheAddress.html",
-			"page/ShippingAddress.html",
-			"pages/index.html",
-			"pages/MyMessage.html",
-			"financialManagement/personalSetting.html",
-			"financialManagement/TransferManagement.html"
-		]
-	},
-	"page/MessageSubmit.html": {
-		"resources": [
-			"css/MessageSubmit.css",
-			"XMB.html"
-		],
-		"refer": [
-			"XMB.html"
-		]
-	},
-	"page/SystemAnnouncement.html": {
-		"resources": [
-			"XMB.html"
-		],
-		"refer": [
-			"XMB.html"
-		]
-	},
-	"page/AddTheAddress.html": {
-		"resources": [
-			"js/mui.picker.js",
-			"js/mui.poppicker.js",
-			"css/mui.poppicker.css",
-			"css/mui.picker.css",
-			"XMB.html"
-		],
-		"refer": [
-			"XMB.html",
-			"page/ShippingAddress.html"
-		]
-	},
-	"page/ShippingAddress.html": {
-		"resources": [
-			"css/ShippingAddress.css",
-			"XMB.html"
-		],
-		"refer": [
-			"XMB.html",
-			"page/AddTheAddress.html"
-		]
-	},
-	"pages/index.html": {
-		"resources": [
-			"pages/MyMessage.html"
-		],
-		"refer": [
-			"pages/MyMessage.html",
-			"XMB.html"
-		]
-	},
-	"pages/MyMessage.html": {
-		"refer": [
-			"XMB.html"
-		]
-	},
-	"financialManagement/personalSetting.html": {
-		"refer": [
-			"XMB.html",
-			"page/Login.html",
-			"financialManagement/modifiedData.html"
-		]
-	},
-	"financialManagement/modifiedData.html": {
-		"refer": [
-			"financialManagement/personalSetting.html"
-		]
-	},
-	"financialManagement/TransferManagement.html": {
-		"refer": [
-			"XMB.html"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "css/index.css",
+      "js/echarts.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "trading platform.html",
+      "Financial details.html",
+      "js/center.js",
+      "css/personal center.css",
+      "img/xiazai.png",
+      "img/xinfeng.png",
+      "img/user-photo.4d1e36f.png",
+      "img/info.png",
+      "img/shichang.png",
+      "img/phone.png",
+      "img/address.png",
+      "img/wife.png",
+      "img/order.png",
+      "img/code.png",
+      "img/hd_bg.png",
+      "img/money.png",
+      "tradingPlatform.html",
+      "css/personalCenter.css",
+      "personalSetting.html",
+      "page/Activation-code.html",
+      "page/OrderList.html",
+      "page/index.html",
+      "page/registered.html"
+    ],
+    "refer": [
+      "trading platform.html",
+      "Financial details.html",
+      "tradingPlatform.html",
+      "personalSetting.html",
+      "PrePaid-phone.html",
+      "financialManagement/BonusDetails.html",
+      "page/PrePaid-phone.html",
+      "page/code.html",
+      "page/registered.html",
+      "page/Online-upgrade.html",
+      "page/Online-after-shots.html",
+      "page/Activation-code.html",
+      "page/OrderList.html",
+      "page/index.html"
+    ]
+  },
+  "trading platform.html": {
+    "resources": [
+      "css/trading platform.css",
+      "index.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "Currency conversion.html": {
+    "resources": [
+      "css/gongyong.css",
+      "js/mui.picker.js",
+      "js/mui.min.js",
+      "js/mui.poppicker.js",
+      "fonts/mui.ttf",
+      "css/Currency conversion.css",
+      "css/mui.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "index.html"
+    ],
+    "refer": []
+  },
+  "Financial details.html": {
+    "resources": [
+      "css/gongyong.css",
+      "js/mui.picker.js",
+      "js/mui.min.js",
+      "js/mui.poppicker.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "css/cw.css",
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "Remittance top-up.html": {
+    "resources": [
+      "css/gongyong.css",
+      "js/mui.picker.js",
+      "img/793951bcd1c801f01a801904ff9c1de4.png",
+      "css/Remittance top-up.css",
+      "js/mui.min.js",
+      "js/mui.poppicker.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css"
+    ],
+    "refer": []
+  },
+  "withdraw deposit.html": {
+    "resources": [
+      "index.html",
+      "css/withdraw deposit.css"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "Add bank card.html": {
+    "resources": [
+      "css/gongyong.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "withdraw deposit.html",
+      "css/Add bank card.css"
+    ],
+    "refer": [
+      "withdraw deposit.html"
+    ]
+  },
+  "Bonus details.html": {
+    "resources": [
+      "css/gongyong.css",
+      "index.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "Transfer management.html": {
+    "resources": [
+      "css/gongyong.css",
+      "js/mui.picker.js",
+      "js/mui.min.js",
+      "js/mui.poppicker.js",
+      "css/Transfer management.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css"
+    ],
+    "refer": []
+  },
+  "tradingPlatform.html": {
+    "resources": [
+      "index.html",
+      "css/tradingPlatform.css",
+      "XMB.html"
+    ],
+    "refer": [
+      "index.html",
+      "XMB.html"
+    ]
+  },
+  "personalSetting.html": {
+    "resources": [
+      "css/gongyong.css",
+      "css/personalSetting.css",
+      "modifiedData.html",
+      "changePassword.html",
+      "index.html"
+    ],
+    "refer": [
+      "modifiedData.html",
+      "changePassword.html",
+      "index.html"
+    ]
+  },
+  "modifiedData.html": {
+    "resources": [
+      "css/modifiedData.css",
+      "personalSetting.html"
+    ],
+    "refer": [
+      "personalSetting.html"
+    ]
+  },
+  "changePassword.html": {
+    "resources": [
+      "js/mui.picker.js",
+      "css/changePassword.css",
+      "js/mui.poppicker.js",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "personalSetting.html"
+    ],
+    "refer": [
+      "personalSetting.html"
+    ]
+  },
+  "PrePaid-phone.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "financialManagement/BonusDetails.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "page/PrePaid-phone.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "page/registered.html": {
+    "refer": [
+      "index.html"
+    ],
+    "resources": [
+      "img/registered_Id_number.png",
+      "img/registered_phone.png",
+      "index.html",
+      "img/registered_name.png",
+      "img/registered_emall.png",
+      "css/registered.css",
+      "img/registered_referees.png",
+      "img/registered_pwd.png",
+      "img/registered_image.png"
+    ]
+  },
+  "page/Online-upgrade.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "page/Activation-code.html": {
+    "refer": [
+      "index.html"
+    ],
+    "resources": [
+      "index.html",
+      "css/Activation-code.css"
+    ]
+  },
+  "page/Online-after-shots.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "page/OrderList.html": {
+    "resources": [
+      "js/mui.js"
+    ],
+    "refer": [
+      "XMB.html"
+    ]
+  },
+  "page/index.html": {
+    "resources": [
+      "index.html",
+      "XMB.html",
+      "page/OrderList.html"
+    ],
+    "refer": [
+      "index.html",
+      "XMB.html",
+      "page/OrderList.html"
+    ]
+  },
+  "XMB.html": {
+    "resources": [
+      "css/index.css",
+      "js/echarts.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "js/center.js",
+      "css/mui.min.css",
+      "img/xiazai.png",
+      "img/xinfeng.png",
+      "img/user-photo.4d1e36f.png",
+      "css/personalCenter.css",
+      "img/info.png",
+      "page/OrderList.html",
+      "img/shichang.png",
+      "img/phone.png",
+      "img/address.png",
+      "img/wife.png",
+      "img/order.png",
+      "img/code.png",
+      "img/hd_bg.png",
+      "page/index.html",
+      "img/money.png",
+      "tradingPlatform.html",
+      "page/MessageSubmit.html",
+      "page/SystemAnnouncement.html",
+      "page/AddTheAddress.html",
+      "page/ShippingAddress.html"
+    ],
+    "refer": [
+      "page/OrderList.html",
+      "page/index.html",
+      "tradingPlatform.html",
+      "page/MessageSubmit.html",
+      "page/SystemAnnouncement.html",
+      "page/AddTheAddress.html",
+      "page/ShippingAddress.html",
+      "pages/index.html",
+      "pages/MyMessage.html",
+      "financialManagement/personalSetting.html",
+      "financialManagement/TransferManagement.html"
+    ]
+  },
+  "page/MessageSubmit.html": {
+    "resources": [
+      "css/MessageSubmit.css",
+      "XMB.html"
+    ],
+    "refer": [
+      "XMB.html"
+    ]
+  },
+  "page/SystemAnnouncement.html": {
+    "resources": [
+      "XMB.html"
+    ],
+    "refer": [
+      "XMB.html"
+    ]
+  },
+  "page/AddTheAddress.html": {
+    "resources": [
+      "js/mui.picker.js",
+      "js/mui.poppicker.js",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "XMB.html"
+    ],
+    "refer": [
+      "XMB.html",
+      "page/ShippingAddress.html"
+    ]
+  },
+  "page/ShippingAddress.html": {
+    "resources": [
+      "css/ShippingAddress.css",
+      "XMB.html"
+    ],
+    "refer": [
+      "XMB.html",
+      "page/AddTheAddress.html"
+    ]
+  },
+  "pages/index.html": {
+    "resources": [
+      "pages/MyMessage.html"
+    ],
+    "refer": [
+      "pages/MyMessage.html",
+      "XMB.html"
+    ]
+  },
+  "pages/MyMessage.html": {
+    "refer": [
+      "XMB.html"
+    ]
+  },
+  "financialManagement/personalSetting.html": {
+    "refer": [
+      "XMB.html",
+      "page/Login.html",
+      "financialManagement/modifiedData.html"
+    ]
+  },
+  "financialManagement/modifiedData.html": {
+    "refer": [
+      "financialManagement/personalSetting.html"
+    ]
+  },
+  "financialManagement/TransferManagement.html": {
+    "refer": [
+      "XMB.html"
+    ]
+  }
 }
