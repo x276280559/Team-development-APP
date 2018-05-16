@@ -1,0 +1,29 @@
+/*在线复投样式*/
+*{
+	margin:0px;padding:0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.mui-table-view-cell input{
+	position: absolute;left: 20%;top:0px;margin-bottom: 0px;
+	border:none;padding:0px;
+	font-size:14px;
+}
+.mui-table-view-cell label{
+	width:20%;
+}
+.d-Input {
+	padding-top:50px;width:100%;text-align: center;padding-bottom: 400px;
+}
+/*自改mui框架中的样式*/
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-bottom:none;important;
+}
+.d-Input input{
+	width:60%;padding:6px 0;border-radius:8vw;background:#345ff1;
+	line-height: 12vw;font-size:6vw;color:#fff;
+}

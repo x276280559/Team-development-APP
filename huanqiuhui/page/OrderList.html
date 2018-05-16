@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/OrderList.css" />
+	</head>
+	<style>
+		.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+  			  background-color:red;
+		}
+		.mui-col-xs-2 {
+			width: 20%
+		}
+		.mui-control-content {
+        background-color: white;
+        min-height:600px ;
+}
+	*{
+		border: none;
+	}
+	</style>
+	<body>
+			<header id="toubudingwei" class="mui-bar mui-bar-nav">
+			<!--头部开始-->
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="index.html"></a>
+			<h1 class="mui-title">订单列表</h1>
+		</header>
+		<div id="AAAA" class="mui-content" >
+		    <div class="mui-slider">
+		        <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="background: white;">
+		            <a class="mui-control-item" href="#item1">全部</a>
+		            <a class="mui-control-item" href="#item2">待付款</a>
+		            <a class="mui-control-item" href="#item3">待发货</a>
+		            <a class="mui-control-item" href="#item4">待收货</a>
+		            <a class="mui-control-item" href="#item5">已签收</a>
+		        </div>
+		        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
+		        <div class="mui-slider-group">
+		            <div id="item1" class="mui-slider-item mui-control-content mui-active "style="background:rgb(239,239,244);">
+		                	<!--内容-->
+		            </div>
+		            <div id="item2" class="mui-slider-item mui-control-content" style="background:rgb(239,239,244);">
+		                <!--	内容-->
+		            </div>
+		             <div id="item3" class="mui-slider-item mui-control-content" style="background:rgb(239,239,244);">
+		                <!--	内容-->
+		            </div>
+		             <div id="item4" class="mui-slider-item mui-control-content" style="background:rgb(239,239,244);">
+		                <!--	内容-->
+		            </div>
+		             <div id="item5" class="mui-slider-item mui-control-content" style="background:rgb(239,239,244);">
+		                <!--	内容-->
+		            </div>
+		        </div>
+		    </div>
+		    	<!--刷新容器-->
+			<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script type="text/javascript" src="../js/mui.js"></script>
+<script type="text/javascript">
+	mui.init({
+		pullRefresh: {
+			container: "#refreshContainer",
+			up: {
+				height:200,
+				contentrefresh: "正在加载...",
+				contentnomore: '没有更多数据了', 
+				callback: fna 
+				}
+		}
+	});
+	function fna(){
+		setTimeout(function(){
+			mui('#refreshContainer').pullRefresh().refresh(true);
+			mui.toast("没有更多了")
+			mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+		},2000)
+	}
+</script>

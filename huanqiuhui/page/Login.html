@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+	<link href="../css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/Login.css" />
+</head>
+	<body>
+		<header></header>
+		<!--头部图片信息-->
+		<form>
+			<!--表单开始-->
+			<div class="mui-input-row login-top">
+				<label><span class="mui-icon mui-icon-person"></span></label>
+				<input id="username" type="text" placeholder="请输入用户名">
+				<!--用户名-->
+			</div>
+			<div class="mui-input-row login-top">
+				<label><span class="mui-icon mui-icon-locked"></span></label>
+				<input id="userpwd" type="password" placeholder="请输入密码">
+				<!--密码-->
+			</div>
+			<div id="yzm" class="mui-input-row login-top">
+				<label><span class="mui-icon mui-icon-refresh"></span></label>
+				<input id="useryzm" type="text" placeholder="请输入验证码">
+				<!--验证码-->
+				<input type="button" id="code" value="" />
+			</div>
+			<div id="denglu">
+				<button id="Login-to" type="button" class="mui-btn mui-btn-blue">登录</button>
+				<!--登录按钮-->
+			</div>
+		</form>
+		<!--表单结束-->
+	</body>
+</html>
+<script src="../js/mui.js"></script>
+<script type="text/javascript" charset="utf-8">
+	mui.init();
+	var cold;
+	var username = document.getElementById("username")
+	var userpwd = document.getElementById("userpwd")
+	var useryzm = document.getElementById("useryzm")
+	function suiji() {  //封装成一个函数
+		//随机验证码
+		code = '';
+		var codeLength = 4;
+		var codeV = document.getElementById('code');
+		var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+		for(var i = 0; i < codeLength; i++) {
+			var index = Math.floor(Math.random() * 10);
+			code += random[index];
+		}
+		codeV.value = code;
+		//随机颜色
+		var colorStr = "";
+		var randomArr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+		for(var i = 0; i < 6; i++) {
+			colorStr += randomArr[Math.ceil(Math.random() * (15 - 0) + 0)];
+		}
+		codeV.style.color = "#" + colorStr;
+		
+		
+		
+		
+		
+		
+	}
+	mui('#yzm').on('tap', '#code', function() {//点击刷新验证码
+		suiji()
+	})
+	window.onload = function() {//页面加载刷新
+		suiji()
+	}
+	
+//调用5+接口		
+   function plusReady(){
+	
+				mui('#denglu').on('tap','#Login-to',function(){
+					
+				if(username.value==''){
+					plus.nativeUI.toast("用户名不能为空",{verticalAlign:'top'});
+				  }
+				else if(userpwd.value==''){
+					plus.nativeUI.toast("密码不能为空",{verticalAlign:'top'});
+				}
+				else if(useryzm.value==''){
+					plus.nativeUI.toast("验证码不能为空",{verticalAlign:'top'});
+				}
+				else if(useryzm.value!=code){
+					plus.nativeUI.toast("验证码输入错误",{verticalAlign:'top'});
+				}
+				else if(useryzm.value == code){
+					plus.nativeUI.toast("验证码输入正确",{verticalAlign:'top'});
+				}
+				
+			})
+	}
+	if(window.plus){
+		plusReady();
+	}else{
+		document.addEventListener("plusready",plusReady,false);
+	}
+	
+</script>

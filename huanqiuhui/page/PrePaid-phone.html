@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/PrePaid-phone.css" />
+	</head>
+	<body>
+		<div class="max-box">
+			<div class="my-header">
+				<div class="my-header-left">
+					<div>
+						<a class="mui-icon mui-icon mui-icon-arrowleft"></a>
+					</div>
+				</div>
+				<div class="my-header-title">手机充值</div>
+			</div>
+			<div class="prepaid">
+				<div class="inpt">
+					<input type="text" value="" placeholder="请输入手机号码"/>
+				</div>
+				<p>充话费</p>
+				<ul id="ul01">
+					<li>
+						<div>
+							<span>30元</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span>50元</span>
+						</div>	
+					</li>
+					<li>
+						<div>
+							<span>100元</span>
+						</div>	
+					</li>
+					<li>
+						<div>
+							<span>200元</span>
+						</div>	
+					</li>
+					<li>
+						<div>
+							<span>300元</span>
+						</div>	
+					</li>
+					<li>
+						<div>
+							<span>500元</span>
+						</div>	
+					</li>
+				</ul>
+				<p>充流量</p>
+				<ul id="ul02">
+					<li>
+						<div>
+							<span>1G</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span>2G</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span>3G</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+	var Oul_01 = document.getElementById("ul01");
+	var Oli_01 = Oul_01.querySelectorAll("li");
+	
+	var Oul_02 = document.getElementById("ul02");
+	var Oli_02 = Oul_02.querySelectorAll("li");
+	//console.log(Oli_01.length)  //6
+	//点击弹出提示充值话费窗口事件
+	for (var i =0;i<Oli_01.length;i++) {
+		//var index =i
+		(function(index){
+			Oli_01[index].addEventListener("tap",function(){
+			//	console.log(Oli_01[index])
+			var Ospan = Oli_01[index].querySelector("span");
+			//console.log(Ospan)
+			mui.confirm("确认充值话费"+ Ospan.innerHTML)
+			})
+		})(i)
+	}
+	//点击弹出提示充值流量窗口事件
+	for (var i =0;i<Oli_02.length;i++) {
+		//var index =i
+		(function(index){
+			Oli_02[index].addEventListener("tap",function(){
+			//	console.log(Oli_01[index])
+			var Ospan = Oli_02[index].querySelector("span");
+			//console.log(Ospan)
+			mui.confirm("确认充值流量"+ Ospan.innerHTML)
+			})
+		})(i)
+	};
+	//验证手机号
+	var Inpt =document.querySelector("input")
+	//console.log(Inpt)
+	var reg = /^1[3|4|5|7|8]\n{9}$/;
+	var retu =function(){
+		var Inpt_val = Inpt.value;
+		return reg.test(Inpt_val);
+	};
+	if (!retu) {
+		mui.toast("手机号有误或格式不正确")
+	}
+</script>

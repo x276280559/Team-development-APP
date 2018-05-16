@@ -1,0 +1,57 @@
+*{margin:0px;padding:0px}
+a{text-decoration: none;}
+li{list-style: none;}
+.max-box{
+	heigth:100%;position: relative;
+}
+.my-header{
+	background:#fff;padding-top:10px;color:#666;
+	margin-bottom: 10px;position: relative;text-align:center;
+}.my-header::after{
+	content:"";
+	height:"";
+	visibility: hidden;
+	clear: both;
+}
+.my-header .my-header-left{
+	width:10%;background:#fff;float:left;padding:1px 0 0 15px;line-height: 44px;
+}
+.my-header .my-header-left a{color:#CCCCCC;}
+.my-header-title{
+	width:90%;float:right;background:#fff;
+	padding:3px 10px 0 0;line-height: 42px;
+}
+.prepaid{
+	background:#fff;padding:0 15px;position: absolute;left:0px;top:64px;width:100%;
+}
+.prepaid .inpt{
+	border-bottom:1px solid #C0C0C0 ;
+}
+.prepaid .inpt input{
+	height:50px;border:none;margin-bottom: 0px;font-weight: bold;
+}
+.prepaid p{
+	padding-top:10px;font-size:17px;
+}
+.prepaid ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;flex-wrap: wrap;
+}
+.prepaid ul li{
+	width:33.33%;
+}
+.prepaid ul li div{
+	padding:10px;
+}
+.prepaid ul li div span {
+    width: 100%;
+    display: block;
+    color: #345ff1;
+    font-size: 18px;
+    /* line-height: 54px; */
+    border: 1px solid #345ff1;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+}

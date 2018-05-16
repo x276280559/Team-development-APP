@@ -1,0 +1,103 @@
+<!--激活码页面-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/Activation-code.css" />
+	</head>
+	<body>
+		<!--头部结构-->
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">在线复投</h1>
+		</header>
+		<!--内容区在线升级切换-->
+		<div class="mui-content">
+		    <div class="mui-slider">
+		        <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted"style="background:#fff;">
+		            <a class="mui-control-item" href="#item1">我的</a>
+		            <a class="mui-control-item" href="#item2">购买</a>
+		            <a class="mui-control-item" href="#item3">转让</a>
+		            <a class="mui-control-item" href="#item4">记录</a>
+		            <a class="mui-control-item" href="#item5">激活</a>
+		        </div>
+		        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
+		        <div style="height:20px;width:100%;"></div>
+		        <div class="mui-slider-group">
+		            <div id="item1" class="item-border mui-slider-item mui-control-content mui-active">
+		            	<ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                    <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                </ul>
+		                
+		            </div>
+		            <div id="item2" class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">
+		                    	<label for="#after-shots-money">购买数量：</label>
+		                    	<input type="text" placeholder="请输入购买数量" id="after-shots-money"/>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<label for="#after-shots-money">激活码单价：</label>
+		                    	<input type="text" value="200" id="after-shots-money"/>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<span class="span01">剩余数量：</span>
+		                    	<span class="span02"></span>
+		                    </li>
+		                </ul>
+		                <div class="d-Input">
+		                	<input type="button" value="确认" />
+		            	</div>
+		            </div>
+		            <div id="item3" class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">
+		                    	<label for="#after-shots-money">转入会员账号：</label>
+		                    	<input type="text" placeholder="请输入购买数量" id="after-shots-money"/>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<label for="#after-shots-money">转入数量：</label>
+		                    	<input type="text" value="" id="after-shots-money"/>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<span class="span01">我的剩余数量：</span>
+		                    	<span class="span02"></span>
+		                    </li>
+		                </ul>
+		                <div class="d-Input">
+		                	<input type="button" value="确认" />
+		            	</div>
+		            </div>
+		            <div id="item4" class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                    <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                </ul>
+		            </div>
+		            <div id="item5" class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="mui-table-view-cell">
+		                    	<label for="#after-shots-money">输入激活码：</label>
+		                    	<input type="text" value="" id="after-shots-money"/>
+		                    </li>
+		                </ul>
+		                <div class="d-Input">
+		                	<input type="button" value="确认" />
+		            	</div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+
+</script>

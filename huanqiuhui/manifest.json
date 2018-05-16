@@ -1,7 +1,7 @@
 {
 	"@platforms": ["android", "iPhone", "iPad"],
 	"id": "H59B8C22B",/*应用的标识，创建应用时自动生成，勿手动修改*/
-	"name": "66",/*应用名称，程序桌面图标名称*/
+	"name": "环球惠超级豪华版",/*应用名称，程序桌面图标名称*/
 	"version": {
 		"name": "1.0.0",/*应用版本名称*/
 		"code": "83"
@@ -10,7 +10,7 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "XMB.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
@@ -130,7 +130,7 @@
 			"icons": {
 				"ios": {
 					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
-					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					 /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
 					"iphone": {
 						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
 						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
@@ -152,14 +152,14 @@
 						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
 						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
 						"settings-retina": ""
-					}
+					},"appstore":"C:/Users/admin/Desktop/文档/环球/icon.png"
 				},
 				"android": {
-					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
-					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
-					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
-					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
-					"xxhdpi": ""
+					"mdpi": "C:/Users/admin/Desktop/文档/环球/icon.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "C:/Users/admin/Desktop/文档/环球/icon.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "C:/Users/admin/Desktop/文档/环球/icon.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "C:/Users/admin/Desktop/文档/环球/icon.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "C:/Users/admin/Desktop/文档/环球/icon.png","xxxhdpi":"C:/Users/admin/Desktop/文档/环球/icon.png"
 				}
 			},
 			"splashscreen": {
@@ -183,12 +183,12 @@
 				"android": {
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": ""
+					"hdpi": "C:/Users/admin/Desktop/文档/环球/splash.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "C:/Users/admin/Desktop/文档/环球/splash.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "C:/Users/admin/Desktop/文档/环球/splash.png"
 				}
 			}
-		}
+		},"ads":{"rp":false,"splash":false,"push":false},"adid":""
 	},
 	"dependencies": {
 		"pages": {
