@@ -36,6 +36,54 @@
 	
 	
 	var phone = document.getElementById("Recharging")
+	var mycode = document.getElementById("mycode")
+	var zhucehuiyuan = document.getElementById("zhucehuiyuan")
+	var zaixianshengji = document.getElementById("zaixianshengji")
+	var zaixianfutou = document.getElementById("zaixianfutou")
+	var goumaijihuoma = document.getElementById("goumaijihuoma")
+	var shiwudingdan = document.getElementById("shiwudingdan")
+	var xunidingdan = document.getElementById("xunidingdan")
+	var xitonggonggao = document.getElementById("xitonggonggao")
+	var liuyantijiao = document.getElementById("liuyantijiao")
+	var wode1liuyan = document.getElementById("wode1liuyan")
+	var wode1dizhi = document.getElementById("wode1dizhi")
+	var tianjiadizhi = document.getElementById("tianjiadizhi")
 	phone.addEventListener("tap",function(){
-		phone.href="PrePaid-phone.html"
+		phone.href="page/PrePaid-phone.html"
+	})
+	mycode.addEventListener("tap",function(){
+		mycode.href="page/code.html"
+	})
+	zhucehuiyuan.addEventListener("tap",function(){
+		zhucehuiyuan.href="page/registered.html"
+	})
+	zaixianshengji.addEventListener("tap",function(){
+		zaixianshengji.href="page/Online-upgrade.html"
+	})
+	zaixianfutou.addEventListener("tap",function(){
+		zaixianfutou.href="page/Online-after-shots.html"
+	})
+	goumaijihuoma.addEventListener("tap",function(){
+		goumaijihuoma.href="page/Activation-code.html"
+	})
+	shiwudingdan.addEventListener('tap',function(){
+		shiwudingdan.href ="page/OrderList.html"
+	})
+	xunidingdan.addEventListener('tap',function(){
+		xunidingdan.href="tradingPlatform.html"
+	})
+	xitonggonggao.addEventListener('tap',function(){
+		xitonggonggao.href="page/SystemAnnouncement.html"
+	})
+	liuyantijiao.addEventListener('tap',function(){
+		liuyantijiao.href="page/MessageSubmit.html"
+	})
+	wode1liuyan.addEventListener('tap',function(){
+		wode1liuyan.href="page/MyMessage.html"
+	})
+	wode1dizhi.addEventListener('tap',function(){
+		wode1dizhi.href="page/ShippingAddress.html"
+	})
+	tianjiadizhi.addEventListener('tap',function(){
+		tianjiadizhi.href="page/AddTheAddress.html"
 	})

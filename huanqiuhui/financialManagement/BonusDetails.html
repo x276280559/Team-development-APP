@@ -16,7 +16,7 @@
 
 			<!-- 主页面标题 -->
 			<header class="mui-bar mui-bar-nav">
-				<a class="mui-icon mui-icon mui-icon-arrowleft " href="../index.html"></a>
+				<a class="mui-icon mui-icon mui-icon-arrowleft fanhui" href="#"></a>
 				<h1 class="mui-title">奖金明细</h1>
 			</header>
 
@@ -29,6 +29,10 @@
 
 </html>
 <script src="../js/mui.min.js"></script>
-		<script type="text/javascript">
-			mui.init()
-		</script>
+<script type="text/javascript">
+	mui.init()
+	var fanhuiA = document.getElementsByClassName("fanhui")
+	fanhuiA.addEventListener('tap',function(){
+		mui.hide()
+	})
+</script>

@@ -24,14 +24,27 @@
 			"img/money.png",
 			"tradingPlatform.html",
 			"css/personalCenter.css",
-			"personalSetting.html"
+			"personalSetting.html",
+			"page/Activation-code.html",
+			"page/OrderList.html",
+			"page/index.html",
+			"page/registered.html"
 		],
 		"refer": [
 			"trading platform.html",
 			"Financial details.html",
 			"tradingPlatform.html",
 			"personalSetting.html",
-			"PrePaid-phone.html"
+			"PrePaid-phone.html",
+			"financialManagement/BonusDetails.html",
+			"page/PrePaid-phone.html",
+			"page/code.html",
+			"page/registered.html",
+			"page/Online-upgrade.html",
+			"page/Online-after-shots.html",
+			"page/Activation-code.html",
+			"page/OrderList.html",
+			"page/index.html"
 		]
 	},
 	"trading platform.html": {
@@ -142,10 +155,12 @@
 	"tradingPlatform.html": {
 		"resources": [
 			"index.html",
-			"css/tradingPlatform.css"
+			"css/tradingPlatform.css",
+			"XMB.html"
 		],
 		"refer": [
-			"index.html"
+			"index.html",
+			"XMB.html"
 		]
 	},
 	"personalSetting.html": {
@@ -187,6 +202,185 @@
 	"PrePaid-phone.html": {
 		"refer": [
 			"index.html"
+		]
+	},
+	"financialManagement/BonusDetails.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"page/PrePaid-phone.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"page/registered.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": [
+			"img/registered_Id_number.png",
+			"img/registered_phone.png",
+			"index.html",
+			"img/registered_name.png",
+			"img/registered_emall.png",
+			"css/registered.css",
+			"img/registered_referees.png",
+			"img/registered_pwd.png",
+			"img/registered_image.png"
+		]
+	},
+	"page/Online-upgrade.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"page/Activation-code.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": [
+			"index.html",
+			"css/Activation-code.css"
+		]
+	},
+	"page/Online-after-shots.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"page/OrderList.html": {
+		"resources": [
+			"js/mui.js"
+		],
+		"refer": [
+			"XMB.html"
+		]
+	},
+	"page/index.html": {
+		"resources": [
+			"index.html",
+			"XMB.html",
+			"page/OrderList.html"
+		],
+		"refer": [
+			"index.html",
+			"XMB.html",
+			"page/OrderList.html"
+		]
+	},
+	"XMB.html": {
+		"resources": [
+			"css/index.css",
+			"js/echarts.min.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"js/center.js",
+			"css/mui.min.css",
+			"img/xiazai.png",
+			"img/xinfeng.png",
+			"img/user-photo.4d1e36f.png",
+			"css/personalCenter.css",
+			"img/info.png",
+			"page/OrderList.html",
+			"img/shichang.png",
+			"img/phone.png",
+			"img/address.png",
+			"img/wife.png",
+			"img/order.png",
+			"img/code.png",
+			"img/hd_bg.png",
+			"page/index.html",
+			"img/money.png",
+			"tradingPlatform.html",
+			"page/MessageSubmit.html",
+			"page/SystemAnnouncement.html",
+			"page/AddTheAddress.html",
+			"page/ShippingAddress.html"
+		],
+		"refer": [
+			"page/OrderList.html",
+			"page/index.html",
+			"tradingPlatform.html",
+			"page/MessageSubmit.html",
+			"page/SystemAnnouncement.html",
+			"page/AddTheAddress.html",
+			"page/ShippingAddress.html",
+			"pages/index.html",
+			"pages/MyMessage.html",
+			"financialManagement/personalSetting.html",
+			"financialManagement/TransferManagement.html"
+		]
+	},
+	"page/MessageSubmit.html": {
+		"resources": [
+			"css/MessageSubmit.css",
+			"XMB.html"
+		],
+		"refer": [
+			"XMB.html"
+		]
+	},
+	"page/SystemAnnouncement.html": {
+		"resources": [
+			"XMB.html"
+		],
+		"refer": [
+			"XMB.html"
+		]
+	},
+	"page/AddTheAddress.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"XMB.html"
+		],
+		"refer": [
+			"XMB.html",
+			"page/ShippingAddress.html"
+		]
+	},
+	"page/ShippingAddress.html": {
+		"resources": [
+			"css/ShippingAddress.css",
+			"XMB.html"
+		],
+		"refer": [
+			"XMB.html",
+			"page/AddTheAddress.html"
+		]
+	},
+	"pages/index.html": {
+		"resources": [
+			"pages/MyMessage.html"
+		],
+		"refer": [
+			"pages/MyMessage.html",
+			"XMB.html"
+		]
+	},
+	"pages/MyMessage.html": {
+		"refer": [
+			"XMB.html"
+		]
+	},
+	"financialManagement/personalSetting.html": {
+		"refer": [
+			"XMB.html",
+			"page/Login.html",
+			"financialManagement/modifiedData.html"
+		]
+	},
+	"financialManagement/modifiedData.html": {
+		"refer": [
+			"financialManagement/personalSetting.html"
+		]
+	},
+	"financialManagement/TransferManagement.html": {
+		"refer": [
+			"XMB.html"
 		]
 	}
 }
