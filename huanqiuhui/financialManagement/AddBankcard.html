@@ -55,4 +55,8 @@
 </html><script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
+			plus.key.addEventListener('backbutton',function(){
+				var text =plus.webview.currentWebview();
+				text.hide('slide-out-left')
+			})
 		</script>
