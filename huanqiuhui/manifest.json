@@ -10,7 +10,7 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "XMB.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
@@ -217,10 +217,19 @@
 					"img/money.png",
 					"tradingPlatform.html",
 					"css/personalCenter.css",
-					"personalSetting.html"
+					"personalSetting.html",
+					"page/Activation-code.html",
+					"page/OrderList.html",
+					"page/index.html",
+					"page/registered.html"
 				],
 				"refer": [
-					"PrePaid-phone.html"
+					"PrePaid-phone.html",
+					"financialManagement/BonusDetails.html",
+					"page/PrePaid-phone.html",
+					"page/code.html",
+					"page/Online-upgrade.html",
+					"page/Online-after-shots.html"
 				],
 				"priority": 0
 			},
@@ -330,7 +339,8 @@
 			"tradingPlatform.html": {
 				"resources": [
 					"index.html",
-					"css/tradingPlatform.css"
+					"css/tradingPlatform.css",
+					"XMB.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -372,12 +382,194 @@
 					"index.html"
 				],
 				"priority": 0
+			},
+			"financialManagement/BonusDetails.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"page/PrePaid-phone.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"page/registered.html": {
+				"resources": [
+					"img/registered_Id_number.png",
+					"img/registered_phone.png",
+					"index.html",
+					"img/registered_name.png",
+					"img/registered_emall.png",
+					"css/registered.css",
+					"img/registered_referees.png",
+					"img/registered_pwd.png",
+					"img/registered_image.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/Online-upgrade.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"page/Activation-code.html": {
+				"resources": [
+					"index.html",
+					"css/Activation-code.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/Online-after-shots.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"page/OrderList.html": {
+				"resources": [
+					"js/mui.js"
+				],
+				"refer": [
+					"XMB.html"
+				],
+				"priority": 0
+			},
+			"page/index.html": {
+				"resources": [
+					"index.html",
+					"XMB.html",
+					"page/OrderList.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"XMB.html": {
+				"resources": [
+					"css/index.css",
+					"js/echarts.min.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/center.js",
+					"css/mui.min.css",
+					"img/xiazai.png",
+					"img/xinfeng.png",
+					"img/user-photo.4d1e36f.png",
+					"css/personalCenter.css",
+					"img/info.png",
+					"page/OrderList.html",
+					"img/shichang.png",
+					"img/phone.png",
+					"img/address.png",
+					"img/wife.png",
+					"img/order.png",
+					"img/code.png",
+					"img/hd_bg.png",
+					"page/index.html",
+					"img/money.png",
+					"tradingPlatform.html",
+					"page/MessageSubmit.html",
+					"page/SystemAnnouncement.html",
+					"page/AddTheAddress.html",
+					"page/ShippingAddress.html"
+				],
+				"refer": [
+					"pages/index.html",
+					"pages/MyMessage.html",
+					"financialManagement/personalSetting.html",
+					"financialManagement/TransferManagement.html"
+				],
+				"priority": 0
+			},
+			"page/MessageSubmit.html": {
+				"resources": [
+					"css/MessageSubmit.css",
+					"XMB.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/SystemAnnouncement.html": {
+				"resources": [
+					"XMB.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/AddTheAddress.html": {
+				"resources": [
+					"js/mui.picker.js",
+					"js/mui.poppicker.js",
+					"css/mui.poppicker.css",
+					"css/mui.picker.css",
+					"XMB.html"
+				],
+				"refer": [
+					"page/ShippingAddress.html"
+				],
+				"priority": 0
+			},
+			"page/ShippingAddress.html": {
+				"resources": [
+					"css/ShippingAddress.css",
+					"XMB.html"
+				],
+				"refer": [
+					"page/AddTheAddress.html"
+				],
+				"priority": 0
+			},
+			"pages/index.html": {
+				"resources": [
+					"pages/MyMessage.html"
+				],
+				"refer": [
+					"XMB.html"
+				],
+				"priority": 0
+			},
+			"pages/MyMessage.html": {
+				"resources": [],
+				"refer": [
+					"XMB.html"
+				],
+				"priority": 0
+			},
+			"financialManagement/personalSetting.html": {
+				"resources": [],
+				"refer": [
+					"XMB.html",
+					"page/Login.html",
+					"financialManagement/modifiedData.html"
+				],
+				"priority": 0
+			},
+			"financialManagement/modifiedData.html": {
+				"resources": [],
+				"refer": [
+					"financialManagement/personalSetting.html"
+				],
+				"priority": 0
+			},
+			"financialManagement/TransferManagement.html": {
+				"resources": [],
+				"refer": [
+					"XMB.html"
+				],
+				"priority": 0
 			}
 		},
 		"idle": {
 			"resources": [
 				"fonts/dcloud_iconfont.ttf",
-				"js/mui.js",
 				"css/mui.css"
 			]
 		}
