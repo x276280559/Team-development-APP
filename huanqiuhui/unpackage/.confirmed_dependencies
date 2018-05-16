@@ -24,14 +24,30 @@
 			"img/money.png",
 			"tradingPlatform.html",
 			"css/personalCenter.css",
-			"personalSetting.html"
+			"personalSetting.html",
+			"financialManagement/BonusDetails.html",
+			"financialManagement/bankAccount.html",
+			"financialManagement/FinancialDetails.html",
+			"financialManagement/CurrencyConversion.html",
+			"financialManagement/TransferManagement.html",
+			"financialManagement/withdrawDeposit.html",
+			"financialManagement/personalSetting.html",
+			"financialManagement/RemittanceTop-up.html"
 		],
 		"refer": [
 			"trading platform.html",
 			"Financial details.html",
 			"tradingPlatform.html",
 			"personalSetting.html",
-			"PrePaid-phone.html"
+			"PrePaid-phone.html",
+			"financialManagement/BonusDetails.html",
+			"financialManagement/bankAccount.html",
+			"financialManagement/FinancialDetails.html",
+			"financialManagement/CurrencyConversion.html",
+			"financialManagement/TransferManagement.html",
+			"financialManagement/withdrawDeposit.html",
+			"financialManagement/personalSetting.html",
+			"financialManagement/RemittanceTop-up.html"
 		]
 	},
 	"trading platform.html": {
@@ -185,6 +201,133 @@
 		]
 	},
 	"PrePaid-phone.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"financialManagement/BonusDetails.html": {
+		"resources": [
+			"css/gongyong.css",
+			"index.html",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"financialManagement/bankAccount.html": {
+		"resources": [
+			"css/yhk.css",
+			"css/gongyong.css",
+			"css/mui.min.css",
+			"financialManagement/AddBankcard.html",
+			"index.html"
+		],
+		"refer": [
+			"financialManagement/AddBankcard.html",
+			"index.html"
+		]
+	},
+	"financialManagement/AddBankcard.html": {
+		"resources": [
+			"financialManagement/bankAccount.html",
+			"css/AddBankCard.css",
+			"index.html",
+			"financialManagement/withdrawDeposit.html",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"financialManagement/bankAccount.html",
+			"index.html",
+			"financialManagement/withdrawDeposit.html"
+		]
+	},
+	"financialManagement/FinancialDetails.html": {
+		"resources": [
+			"css/gongyong.css",
+			"index.html",
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"css/cw.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"financialManagement/CurrencyConversion.html": {
+		"resources": [
+			"css/CurrencyConversion.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"financialManagement/TransferManagement.html": {
+		"resources": [
+			"css/TransferManagement.css",
+			"css/gongyong.css",
+			"index.html",
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"financialManagement/withdrawDeposit.html": {
+		"resources": [
+			"css/gongyong.css",
+			"css/mui.min.css",
+			"financialManagement/AddBankcard.html",
+			"css/withdrawDeposit.css",
+			"index.html"
+		],
+		"refer": [
+			"financialManagement/AddBankcard.html",
+			"index.html"
+		]
+	},
+	"financialManagement/modifiedData.html": {
+		"resources": [
+			"css/modifiedData.css",
+			"financialManagement/personalSetting.html"
+		],
+		"refer": [
+			"financialManagement/personalSetting.html"
+		]
+	},
+	"financialManagement/personalSetting.html": {
+		"resources": [
+			"css/gongyong.css",
+			"css/personalSetting.css",
+			"financialManagement/modifiedData.html",
+			"css/mui.min.css",
+			"index.html"
+		],
+		"refer": [
+			"financialManagement/modifiedData.html",
+			"index.html"
+		]
+	},
+	"financialManagement/RemittanceTop-up.html": {
+		"resources": [
+			"css/gongyong.css",
+			"index.html",
+			"js/mui.picker.js",
+			"img/793951bcd1c801f01a801904ff9c1de4.png",
+			"js/mui.poppicker.js",
+			"css/mui.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"css/RemittanceTop-up.css"
+		],
 		"refer": [
 			"index.html"
 		]
