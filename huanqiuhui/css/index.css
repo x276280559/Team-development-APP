@@ -51,7 +51,10 @@ header {
 .box2>img {
 	width: 24px;
 }
-
+.mui-table-view-cell>p{
+	font-size: 17px;
+	color: #000000;
+}
 #hao-img {
 	margin-top: -6px;
 	vertical-align: middle;
@@ -111,7 +114,9 @@ header {
 	border-top: 1px solid #C0C0C0;
 	height: 59px;
 }
-
+.mui-icon{
+	margin-top: 7px;
+}
 .hao-box3-2>ul>li {
 	float: left;
 	height: 40px;
@@ -169,6 +174,7 @@ header {
 }
 .mui-table-view-cell{
 	font-size: 17px;
+	
 }
 
 #hao-spn3{
@@ -183,6 +189,7 @@ header {
 }
 #item1mobile, #item2mobile, #item3mobile{
 	border-bottom: none;
+	height: 45vh;
 }
 .mui-slider{
 	background: #FFFFFF;
@@ -200,4 +207,14 @@ header {
 }
 .mh-right>a, .mh-center>p, .mh-lefe>a{
 	color:#FFFFFF;
+}
+#hao-inp{
+	width: 40%;
+	height: 100%;
+	float: right;
+	margin: 0;
+	border: none;
+}
+#hao-li2, #hao-li3{
+	line-height: 40px;
 }
